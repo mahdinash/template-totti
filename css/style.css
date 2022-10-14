@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'homa';
+    src:url('fonts/BHoma.eot?#') format('eot'),
+    url('fonts/BHoma.woff') format('woff'),
+    url('fonts/BHoma.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'yekan';
+    src:url('/fonts/BYekan.eot?#') format('eot'),
+    url('/fonts/BYekan.woff') format('woff'),
+    url('/fonts/BYekan.ttf') format('truetype');
+}
+body{
+    direction: rtl;
+    font-family: "0 Homa";
+}
+.home-text{
+    padding-right: 50px;
+}
+.home-img{
+    background: url("../images/home1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.home-img::before{
+    content: "";
+    position: absolute;
+    clip-path: polygon(0 0, 55% 0, 94% 100%, 0% 100%);
+    background: crimson;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+
+}
